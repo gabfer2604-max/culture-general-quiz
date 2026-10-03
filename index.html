@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon projet</title>
     <style>
       body {
@@ -96,6 +97,22 @@ body.theme-bleu {
 }
 body.theme-bleu h1 {
     color: #0d3b66 !important;
+}
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+    height: auto; /* Permet au contenu de défiler proprement si l'écran est petit */
+    min-height: 100vh;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 100%; /* Le bouton prend toute la largeur sur mobile */
+    max-width: 300px;
+  }
 }
 </style>
 </head><body>
